@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UI.FragmentLogin">
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:shadowColor="@android:color/darker_gray"
+        android:hint="Email Id"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/shadowedittext"
+        android:inputType="textEmailAddress|textNoSuggestions"
+        android:elevation="4dp"
+        android:drawableStart="@drawable/custom_email_icon"
+        android:drawablePadding="12dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="30dp"
+        android:autofillHints=""
+        android:fontFamily="@font/poppins_regular"/>
+
+    <RelativeLayout
+        android:elevation="4dp"
+        android:layout_width="match_parent"
+        android:id="@+id/password"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:shadowColor="@android:color/darker_gray"
+        android:layout_below="@+id/email"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/shadowedittext"
+        tools:ignore="RtlSymmetry"
+        >
+        <EditText
+            android:id="@+id/editPassword"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:drawablePadding="12dp"
+            android:paddingEnd="5dp"
+            android:inputType="textPassword"
+            android:background="@drawable/shadowedittext"
+            android:paddingHorizontal="30dp"
+            android:drawableStart="@drawable/custom_lock_icon"
+            android:autofillHints=""
+            tools:ignore="RtlSymmetry"
+            android:hint="Password"
+            android:fontFamily="@font/poppins_regular"/>
+
+        <ImageView
+            android:id="@+id/show_pass_btn"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:alpha=".5"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_remove_red_eye_24"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/loginButton"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginHorizontal="40dp"
+        android:background="@drawable/buttonlayout">
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:indeterminateTint="@android:color/white"
+            android:indeterminateTintMode="src_atop"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/button_text"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"/>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/passwordForget"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginStart="70dp"/>
+
+</RelativeLayout>

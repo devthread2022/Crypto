@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "107878826657",
+    "project_id": "cryptoworld-7f545",
+    "storage_bucket": "cryptoworld-7f545.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:107878826657:android:0321d98c45d88cd11966e0",
+        "android_client_info": {
+          "package_name": "com.jvt.devthread.cryptoworld"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "107878826657-sbhkb80bqc7t4qkar6r8ljo1l6ed34nt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5rpHo5pRzEuRXB3jj4WY1D520669hFOc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "107878826657-sbhkb80bqc7t4qkar6r8ljo1l6ed34nt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

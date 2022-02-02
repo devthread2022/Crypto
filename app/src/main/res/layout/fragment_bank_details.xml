@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.UI.BankDetails"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/splash_back">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bank Details"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please provide the information as below"
+            android:textSize="15sp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"/>
+        <EditText
+            android:id="@+id/bank"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/box_back"
+            android:padding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:hint="Bank Name"
+            android:textSize="14sp"
+            android:textColorHint="#939393"/>
+        <EditText
+            android:id="@+id/account"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/box_back"
+            android:padding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:hint="Account Number"
+            android:textSize="14sp"
+            android:inputType="numberPassword"
+            android:textColorHint="#939393"/>
+        <EditText
+            android:id="@+id/confirmAccount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/box_back"
+            android:padding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:hint="Confirm Account Number"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:textColorHint="#939393"/>
+        <EditText
+            android:id="@+id/ifsc"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/box_back"
+            android:padding="5dp"
+            android:fontFamily="@font/poppins_regular"
+            android:textColor="@color/black"
+            android:hint="IFSC"
+            android:textSize="14sp"
+            android:textColorHint="#939393"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/verify"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@drawable/buttonlayout">
+
+            <ProgressBar
+                android:id="@+id/progressbar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:indeterminateTint="@android:color/white"
+                android:indeterminateTintMode="src_atop"
+                android:visibility="gone"
+                />
+
+            <TextView
+                android:id="@+id/button_text"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Verify"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:fontFamily="@font/poppins_regular"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Activity.UI.VerificationPin"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/crypto_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Enter your PIN"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppins_light"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Enter the secure PIN to access\nyour account."
+        android:gravity="center"/>
+    <com.chaos.view.PinView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cursorWidth="2dp"
+        app:cursorColor="@color/black"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:inputType="numberPassword"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        app:itemCount="4"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorStart"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_regular"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:text="Forgot PIN?"/>
+
+</LinearLayout>
